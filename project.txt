@@ -1,0 +1,33 @@
+Assumptions:
+There are admin, users and exchanges.
+The admin has all permissions but does not own asset.
+Users and exchanges have 'send,receive' permissions.
+The admin can issue asset to exchanges.
+Exchanges can send asset to users.
+Assets may only be transfered between users including exchanges.
+There can be any numbers of assets (currency).
+Each users (including the admin) has only one account.
+An account has an address and an password.
+The password is given when register the account.
+Passwords should not be stored directly.
+Addresses are encoded with its password and stored in the Blockchain.
+Passwords are verified by decoding the encoded addresses.
+The identity of account owner may be added to the Blockchain. **
+
+Admin Role:
+   Prepare and obtain pwd.
+   Issue asset to exchange.
+
+User Role:
+   Register to obtain address and pwd.
+   Buy asset from exchange, the exchange send asset to the account.
+   Send asset to receiver.
+   Check account balance.
+
+Exchange Role:
+   Register to obtain address and pwd.
+   Receive asset that issued from admin, request more as needed.
+   Source: accept real mony, transfer asset to the buyer account.
+   Sink:  receive asset from user, provider real mony the seller. 
+ 
+   
